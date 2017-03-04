@@ -44,7 +44,7 @@ public class ChoseCityPicker<T> extends BasePickerView implements View.OnClickLi
         final View optionspicker = view.findViewById(R.id.optionspicker);
         wheelOptions = new CityWheel(optionspicker);
 
-        //获取数据
+        //获取数据   这里可以高度自定义，自己传入集合
         String addressJson = getFromAssets(context,"addr.txt");
         Gson gson = new Gson();
         Log.i("string","address--------->"+addressJson);
